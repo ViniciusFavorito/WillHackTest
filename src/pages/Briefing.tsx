@@ -17,7 +17,7 @@ export function Briefing() {
             </div>
             <div className="flex flex-row col-span-2  justify-end bg-yellow-600">
                 <div className=" p-60 h-min bg-green-800 ">
-                    X
+                    Xa
                 </div>
             </div>
             <div className="row-span-2 col-span-2 bg-red-800">
