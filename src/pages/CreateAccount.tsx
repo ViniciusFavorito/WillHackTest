@@ -1,4 +1,6 @@
 import { IconBar } from "../layouts/IconBar";
+import { AiOutlineUser } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 export function CreateAccount() {
     return (
@@ -14,26 +16,53 @@ export function CreateAccount() {
                             X
                         </a>
                     </div>
-                    <div className=" box-content pl-16 pr-16 mb-5 h-auto">
+                    <div className=" box-content p-16 h-auto">
                         <p className="font-bold text-white">Seu Nome</p>
-                        <input type="text" className="w-full  " placeholder="Insira seu nome" />
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <AiOutlineUser className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Insira seu nome" />
+                        </div>
                     </div>
-                    <div className=" box-content  pl-16 pr-16 mb-5 h-auto">
+                    <div className=" box-content p-16 h-auto">
                         <p className="font-bold text-white">Seu Sobrenome</p>
-                        <input type="text" className="w-full " placeholder=" Insira seu sobrenome" />
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <AiOutlineUser className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Insira seu sobrenome" />
+                        </div>
                     </div>
-                    <div className=" box-content  pl-16 pr-16 mb-5 h-auto">
+                    <div className=" box-content p-16 h-auto">
                         <p className="font-bold text-white">Sua Empresa <span className="text-[10px] opacity-40">("Opicional")</span></p>
-                        <input type="text" className="w-full " placeholder=" Insira o nome da sua empresa" />
+
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <AiOutlineUser className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder=" Insira o nome da sua empresa" />
+                        </div>
                     </div>
-                    <div className=" box-content  pl-16 pr-16 mb-5  h-auto">
-                        <p className="font-bold text-white">Seu E-mail </p>
-                        <input type="text" className="w-full " placeholder=" Insira seu e-mail" />
-                        <p className="text-[11px] text-white">Não se preocupe. Não vamos fazer SPAM no seu e-mail ;-)</p>
+
+                    <div className=" box-content p-16 h-auto">
+                        <p className="font-bold text-white">E-mail</p>
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <MdEmail className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Insira seu e-mail" />
+                        </div>
                     </div>
-                    <div className=" box-content  pl-16 pr-16 mb-5 h-auto">
+                    <div className=" box-content p-16 h-auto">
                         <p className="font-bold text-white">Seu WhatsApp </p>
-                        <input type="text" className="w-full " placeholder=" Insira seu e-mail" />
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <MdEmail className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Insira seu whatsapp" />
+
+                        </div>
                         <p className="text-[11px] text-white">Nossa equipe vai entrar em concato com vc pelo WhatsApp.</p>
                     </div>
 
@@ -46,7 +75,7 @@ export function CreateAccount() {
                         </div>
                     </a>
                     <a href="/login">
-                        <div className="  rounded ml-16 mr-16  cursor-pointer">
+                        <div className="  rounded ml-16 mr-16  cursor-pointer mb-5">
                             <div className="bg-black border-2 hover:bg-stone-700 border-gray-500  flex items-center justify-center px-6 py-12 text-white">
                                 Cancelar
                             </div>

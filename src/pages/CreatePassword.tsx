@@ -1,3 +1,4 @@
+import { RiLockPasswordFill } from "react-icons/ri";
 import { IconBar } from "../layouts/IconBar";
 
 export function CreatePassword() {
@@ -14,20 +15,30 @@ export function CreatePassword() {
                             X
                         </a>
                     </div>
-                    <div className=" box-content pl-16 pr-16 mb-5 h-auto">
-                        <p className="font-bold text-white">Sua senha</p>
-                        <input type="password" className="w-full  " placeholder="Insira sua senha" />
+                    <div className=" box-content p-16 h-auto">
+                        <p className="font-bold text-white">Senha</p>
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <RiLockPasswordFill className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Insira sua senha" />
+                        </div>
                     </div>
-                    <div className=" box-content  pl-16 pr-16 mb-5 h-auto">
-                        <p className="font-bold text-white">Confirme sua senha</p>
-                        <input type="password" className="w-full " placeholder=" Confirme sua senha" />
+                    <div className=" box-content p-16 h-auto">
+                        <p className="font-bold text-white">Senha</p>
+                        <div className="flex flex-row border-2 border-gray-500 bg-neutral-800 p-4 rounded-sm focus:border-gray-0">
+                            <div className="w-30 h-24 my-auto opacity-20">
+                                <RiLockPasswordFill className="w-full h-full" />
+                            </div>
+                            <input type="email" className="w-full bg-transparent border-none focus:outline-none active:border-none" placeholder="Confirme sua senha" />
+                        </div>
                     </div>
                     <div className="box-content  pl-16 pr-16 mb-5 h-auto text-[12px] ">
                         <p className="text-white">
-                            Ao se registrarm você concoda com o processamento de seus dados pessoalmente pelo Wll.Hack conforme descrito na Politica de Privacidade
+                            Ao se registrarm você concoda com o processamento de seus dados pessoalmente pelo Wll.Hack conforme descrito na Politica de Privacidade.
                         </p>
                     </div>
-                    <div className="flex box-content  pl-16 pr-16 mb-5  h-auto text-[12px]">
+                    <div className="flex box-content pl-16 pr-16 mb-5 h-auto text-[12px]">
                         <input type="checkbox" />
                         <p className="ml-6 text-white">Li e concordo com a <a className="text-[12px] underline underline-offset-2">Política de Privacidade</a></p>
 
